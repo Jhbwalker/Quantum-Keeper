@@ -24,14 +24,20 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/MediaQ.css">
+
+  <!-- BootStrap CSS  -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>
-  <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script>
+  <!-- <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script> -->
+  <script src="includes/js/modernizr-2.6.2.min.js"></script>
 
 
 </head>
@@ -52,19 +58,19 @@
               <div class="row">
                 <img id="logoresize" src="http://s20.postimg.org/wfskp0g31/Logo.png" />
               </div>
-              <div id="videoset" class="row">
+             <!--  <div id="videoset" class="row">
                 <div><iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/00n9eyjEklc" frameborder="0" allowfullscreen></iframe></div>
-              </div>
+              </div> -->
 
             </div>
           </div>
         </div>
         <div id="navcontainer" class="row">
           <ul id="navmenu">
-            <li><button id="myBtn"><span><span>About</span></span></button></li>
-            <li><button id="myBtnGaly"><span><span>Gallery</span></span></button></li>
-            <li><a href="#demo">Demo</a></li>
-            <li><a href="#credits">Credits</a></li>
+            <li class="mylist"><button id="myBtn">About</button></li>
+            <li class="mylist"><button id="myBtnGaly">Gallery</button></li>
+            <li class="mylist"><a href="#demo">Demo</a></li>
+            <li class="mylist"><a href="#credits">Credits</a></li>
           </ul>
         </div>
         <div id="myModal" class="modal">
@@ -113,7 +119,7 @@
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script>
+ <!--  <script>
     var modal = document.getElementById('myModal');
     	var btn = document.getElementById("myBtn");
     	var span = document.getElementsByClassName("close")[0];
@@ -227,7 +233,7 @@
     		}
     	  }
     	});
-  </script>
+  </script> -->
 
 </body>
 

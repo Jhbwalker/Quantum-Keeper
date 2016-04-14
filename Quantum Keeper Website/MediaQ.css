@@ -1,0 +1,32 @@
+/*Mobile Plaform*/
+
+
+/*Tablet Platforms*/
+@media screen (min-width: 480px){
+
+#navmenu li{ 
+	display: inline-block;
+	height: 20px; 
+	margin:0;
+
+ }
+}
+
+
+
+/*Desktop Platforms */
+@media screen (min-width: 660px){ 
+#navmenu li{ 
+	display: inline-block;
+	height: 20px; 
+
+ }
+
+
+ }
+
+
+/*Large Desktop Platforms*/
+@media screen (min-width: 1200px){ 
+
+}
