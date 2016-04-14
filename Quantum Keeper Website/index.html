@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Quantum Keeper</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script>
+
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <canvas id="test"></canvas>
+  <div id="indexing" id="dottedbg">
+
+    <div id="spottedbg">
+
+      <div class="container">
+        <div class="row">
+          <div class="one-half.column">
+            <div id="imagealign">
+              <div class="row">
+                <img id="logoresize" src="http://s20.postimg.org/wfskp0g31/Logo.png" />
+              </div>
+              <div id="videoset" class="row">
+                <div><iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/00n9eyjEklc" frameborder="0" allowfullscreen></iframe></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="navcontainer" class="row">
+          <ul id="navmenu">
+            <li><button id="myBtn"><span><span>About</span></span></button></li>
+            <li><button id="myBtnGaly"><span><span>Gallery</span></span></button></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#credits">Credits</a></li>
+          </ul>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="one.column modal-body">
+              <img id="aboutimg" src="http://s20.postimg.org/6ya65eyct/About.png" />
+            </div>
+          </div>
+        </div>
+        <div id="myGallery" class="modal1">
+          <div class="modal-contentgallery">
+
+            <div>
+            
+              <!--
+					
+					<input type="radio" id="id1" class="radio_item" name="controls" checked="checked" />
+					<label for="id1" class="label_item"><img src="images/concept/1.png" /></label>
+					<input type="radio" id="id2" class="radio_item" name="controls" />
+					<label for="id2" class="label_item"><img src="images/concept/1.png" /></label>
+					<input type="radio" id="id3" class="radio_item" name="controls" />
+					<label for="id3" class="label_item"></label>
+					<input type="radio" id="id4" class="radio_item" name="controls" />
+					<label for="id4" class="label_item"></label>
+					-->
+<span class="close1">&times;</span>
+              <div class="galeria">
+                
+                <div class="gallerypos">
+                  <div class="imagen"></div>
+                  <div class="imagen"></div>
+                  <div class="imagen"></div>
+                  <div class="imagen"></div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    var modal = document.getElementById('myModal');
+    	var btn = document.getElementById("myBtn");
+    	var span = document.getElementsByClassName("close")[0];
+    	btn.onclick = function() {
+    		modal.style.display = "block";
+    	}
+    	span.onclick = function() {
+    		modal.style.display = "none";
+    	}
+    	window.onclick = function(event) {
+    		if (event.target == modal) {
+    			modal.style.display = "none";
+    		}
+    	}
+    
+    	var modal1 = document.getElementById('myGallery');
+    	var btn = document.getElementById("myBtnGaly");
+    	var span = document.getElementsByClassName("close1")[0];
+    	btn.onclick = function() {
+    		modal1.style.display = "block";
+    	}
+    	span.onclick = function() {
+    		modal1.style.display = "none";
+    	}
+    	window.onclick = function(event) {
+    		if (event.target == modal1) {
+    			modal1.style.display = "none";
+    		}
+    	}
+    
+    	/*
+    	Not my code bouncing balls orignally by Rob Glazebrook
+    	Added glow, changed size, color and speed
+    	*/
+    
+    	var particles = [],
+    		//number of particles
+    		particleCount = 200;
+    		Particle = function(x,y) {     
+    		  this.x = x;
+    		  this.y = y;
+    		  
+    		  
+    		  
+    		  //size of particles 
+    		  this.radius = random(1,5);
+    		  
+    		  //colors red,green,blue,transparancy 
+    		  this.rgba = 'rgba('+floor(random(240,245))+','+floor(random(219,245))+','+floor(random(140,144))+','+random(.2,.8)+')';
+    		  
+    		  //changes speed of particle
+    		  this.vx = random(-.5,.5);
+    		  this.vy = random(-.5,.5);
+    		  
+    		  // Draw our particle to the canvas.
+    		  this.draw = function(ctx) {
+    			ctx.fillStyle = this.rgba;
+    			ctx.beginPath();
+    			ctx.arc(this.x,this.y,this.radius,0,TWO_PI);
+    			ctx.fill();
+    			
+    			//adds blinking glow
+    			ctx.shadowBlur = random(15,30);
+    			//glow color
+    			ctx.shadowColor = "white";
+    		  };
+    		  
+    		  // Update our position. 
+    		  this.update = function(ctx) {
+    		  
+    			this.x += this.vx;
+    			this.y += this.vy;
+    			// Bounce off edges.
+    			if(this.x + this.radius > ctx.width) {
+    			  this.vx *= -1;
+    			  this.x = ctx.width - this.radius;
+    			}
+    			if(this.x - this.radius < 0) {
+    			  this.vx *= -1;
+    			  this.x = this.radius;
+    			}
+    			if(this.y + this.radius > ctx.height) {
+    			  this.vy *= -1;
+    			  this.y = ctx.height - this.radius;
+    			}
+    			if(this.y - this.radius < 0) {
+    			  this.vy *= -1;
+    			  this.y = this.radius;
+    			}        
+    		  }
+    		};
+    
+    	var sketch = Sketch.create({
+    	  setup: function() {
+    		var i = particleCount;
+    		while(i--) {
+    		  var p = new Particle(random(0, this.width),random(0, this.height));
+    		  particles.push(p);
+    		}
+    	  },
+    	  update: function() {
+    		var i = particleCount;
+    		while(i--) { 
+    		  particles[i].update(this);
+    		}
+    	  },
+    	  draw: function() {
+    		var i = particleCount;
+    		while(i--) {
+    		  particles[i].draw(this);
+    		}
+    	  }
+    	});
+  </script>
+
+</body>
+
+</html>
