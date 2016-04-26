@@ -1,0 +1,7 @@
+#toBeCenter{ 
+	width: 300px;
+	height: 80px;
+	background: url('../images/Logo.png') center no-repeat;
+	background-size: contain;
+	position: center;
+ }

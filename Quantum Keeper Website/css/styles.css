@@ -263,6 +263,13 @@ iframe {
   
 
 }
+#videoset .H_Frame{ 
+    position: relative;
+    display: block;
+    width: 100%; 
+    height: 400px
+  
+ }
 
 .close1:hover,
 .close1:focus {
@@ -329,6 +336,38 @@ background-size: 100% 100%;
 background-image: url(http://s20.postimg.org/bexxqcn71/image.png);
 background-size: 100% 100%;  
 }
+
+#Slideshow {
+  background-color: skyblue;
+  height: 301px;
+  width: 876px;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+}
+#Slideshow .item{ 
+  height: 300px; 
+
+ }
+#slide1{ 
+  background: url("../images/Logo.png") top center no-repeat;
+ }
+ #slide2{ 
+  background: url("../images/Logo.png") top center no-repeat;
+  }
+  #slide3{ 
+  background: url("../images/Logo.png") top center no-repeat;
+   }
+ .carousel{ 
+  width: 1200px; 
+  }
+.carousel-caption{ 
+  font-size: 24px;
+  text-align: center;
+  color: white;
+ }
 
 
 .imagen:before {

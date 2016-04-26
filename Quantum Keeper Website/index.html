@@ -22,7 +22,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/MediaQ.css">
 
@@ -35,8 +35,8 @@
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>
-  <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script> -->
+  <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script>
   <script src="includes/js/modernizr-2.6.2.min.js"></script>
 
 
@@ -51,16 +51,16 @@
 
     <div id="spottedbg">
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="one-half.column">
             <div id="imagealign">
               <div class="row">
-                <img id="logoresize" src="http://s20.postimg.org/wfskp0g31/Logo.png" />
+                <img id="logoresize" src="images/logo.png" />
               </div>
-             <!--  <div id="videoset" class="row">
-                <div><iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/00n9eyjEklc" frameborder="0" allowfullscreen></iframe></div>
-              </div> -->
+             <div id="videoset" class="row">
+                <div><iframe class ="H_Frame"width="560" height="315" align="middle" src="https://www.youtube.com/embed/00n9eyjEklc" frameborder="0" allowfullscreen></iframe></div>
+              </div>
 
             </div>
           </div>
@@ -71,8 +71,10 @@
             <li class="mylist"><button id="myBtnGaly">Gallery</button></li>
             <li class="mylist"><a href="#demo">Demo</a></li>
             <li class="mylist"><a href="#credits">Credits</a></li>
+            
           </ul>
         </div>
+
         <div id="myModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
@@ -86,17 +88,17 @@
 
             <div>
             
-              <!--
+              
 					
 					<input type="radio" id="id1" class="radio_item" name="controls" checked="checked" />
-					<label for="id1" class="label_item"><img src="images/concept/1.png" /></label>
+					<label for="id1" class="label_item"><img class ="img-responsive" src="images/concept/1.png" /></label>
 					<input type="radio" id="id2" class="radio_item" name="controls" />
-					<label for="id2" class="label_item"><img src="images/concept/1.png" /></label>
+					<label for="id2" class="label_item"><img class ="img-responsive" src="images/concept/1.png" /></label>
 					<input type="radio" id="id3" class="radio_item" name="controls" />
 					<label for="id3" class="label_item"></label>
 					<input type="radio" id="id4" class="radio_item" name="controls" />
 					<label for="id4" class="label_item"></label>
-					-->
+					
 <span class="close1">&times;</span>
               <div class="galeria">
                 
@@ -119,7 +121,7 @@
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <!--  <script>
+  <script>
     var modal = document.getElementById('myModal');
     	var btn = document.getElementById("myBtn");
     	var span = document.getElementsByClassName("close")[0];
@@ -233,7 +235,7 @@
     		}
     	  }
     	});
-  </script> -->
+  </script>
 
 </body>
 
