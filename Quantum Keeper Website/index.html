@@ -36,8 +36,9 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>
-  <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script>
-  <script src="includes/js/modernizr-2.6.2.min.js"></script>
+  <!-- <script src='https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js'></script> -->
+  <script src="includes/js/modernizr-2.6.2.min.js"></script>\
+  <script src="js/sketch.min.js"></script>
 
 
 </head>
@@ -47,7 +48,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <canvas id="test"></canvas>
-  <div id="indexing" id="dottedbg">
+  <div id="indexing" id="dottedbg" class="container-fluid">
 
     <div id="spottedbg">
 
@@ -159,7 +160,7 @@
     
     	var particles = [],
     		//number of particles
-    		particleCount = 200;
+    		particleCount = 20;
     		Particle = function(x,y) {     
     		  this.x = x;
     		  this.y = y;
