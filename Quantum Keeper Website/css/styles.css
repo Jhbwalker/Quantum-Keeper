@@ -62,9 +62,16 @@ body {
 }
 
 #navcontainer {
-  float: center;
+  /*float: center;*/
   /*margin-top: 15%;*/
 }
+.navbar .navbar-nav{ 
+  height: 1px;
+ }
+ .navWords{ 
+    font-size: 10px; 
+    position: relative 
+  }
 
 ul {
   font-size: 1.5em;
@@ -267,9 +274,18 @@ iframe {
     position: relative;
     display: block;
     width: 100%; 
-    height: 400px
+    height: 400px;
   
  }
+
+ .credits{ 
+  color:#fff;
+  font-size: 1.525em; 
+  }
+  .Semester{ 
+  color:#fff;
+  font-size: 2.65em;
+   }
 
 .close1:hover,
 .close1:focus {
