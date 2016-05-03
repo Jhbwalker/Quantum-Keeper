@@ -66,12 +66,29 @@ body {
   /*margin-top: 15%;*/
 }
 .navbar .navbar-nav{ 
-  height: 1px;
+  height: 50px;
  }
  .navWords{ 
-    font-size: 10px; 
-    position: relative 
+    font-size: 15px; 
+    position: relative;
+    padding: 15px; 
+    margin:auto;
   }
+  #pushDown{ 
+  margin-top: 100px;
+
+   }
+
+   #pushRight{
+  margin-left: 450px;
+  font-size: 1.1em;
+  color: magenta;
+  margin-bottom: 20px;
+
+   }
+   #pushRight li{ 
+      color: red;
+    }
 
 ul {
   font-size: 1.5em;
@@ -256,7 +273,7 @@ iframe {
 
 .close:hover,
 .close:focus {
-  color: white;
+  color: yellow;
   text-decoration: none;
   cursor: pointer;
 }
@@ -270,6 +287,9 @@ iframe {
   
 
 }
+.toYellow{ 
+  color: gold;
+ }
 #videoset .H_Frame{ 
     position: relative;
     display: block;
